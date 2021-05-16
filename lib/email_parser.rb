@@ -10,6 +10,6 @@ class EmailAddressParser
   end
 
   def parse
-    emails.split(" ").collect{|emais|emails.join(", ")}
+    emails.split(" ").uniq
   end
 end
